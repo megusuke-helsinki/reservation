@@ -1,0 +1,76 @@
+/* 和風・シンプルな背景と日本語フォント */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f3e9;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* コンテナ中央寄せ */
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* ロゴ画像 */
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* タイトル */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2d3436;
+    position: relative;
+}
+
+/* タイトル下の淡い下線 */
+h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #d1cfc4;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* ボタン（リンク） */
+.reservation-button {
+    display: block;
+    width: 100%;
+    background-color: #2d3436;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 0;
+    margin: 12px 0;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* ホバー時 */
+.reservation-button:hover {
+    background-color: #636e72;
+    transform: translateY(-2px);
+}
+
+/* モバイル対応 */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    .reservation-button {
+        font-size: 1rem;
+    }
+}
